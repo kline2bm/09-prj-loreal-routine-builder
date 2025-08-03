@@ -20,7 +20,8 @@
       <!------- Header / Branding ------->
       <header class="site-header">
         <img src="img/loreal-logo.png" alt="L'Oréal Logo" class="logo" />
-        <h1 class="site-title">Smart Routine &amp; Product Advisor</h1>
+        <h1 class="site-title">Smart Routine & Product Advisor</h1>
+        <p>Discover your perfect beauty regimen with personalized recommendations</p>
       </header>
 
       <!-- Category Filter -->
@@ -37,6 +38,7 @@
           <option value="suncare">Suncare</option>
           <option value="fragrance">Fragrance</option>
         </select>
+        <input type="text" id="searchInput" placeholder="Search products..." class="search-input">
       </div>
 
       <!-- Products Grid -->
@@ -88,8 +90,7 @@
       </footer>
     </div>
 
-    <!-- secrets.js can be removed when using Cloudflare Workers for API requests -->
-    <script src="secrets.js"></script>
+    <!-- Cloudflare Worker is now handling API requests -->
     <script src="script.js"></script>
   </body>
 </html>
